@@ -117,18 +117,14 @@ function levelSearch() {
 
 function displayLevelItems(data){
   
-  console.log(data);
-  
-  console.log(data[0].data.characters)
-  
   const itemDisplay = document.getElementById('item-display');
   var characters = '';
-  
+  itemDisplay.style.display = 'block';
   itemDisplay.innerHTML = '';
   
   for (let i = 0; i < data.length; i++) {
     
-    characters = data[i].data.slug;
+    characters = data[i]?.data?.slug;
     
     itemDisplay.innerHTML += `
       <p>${characters}</p>

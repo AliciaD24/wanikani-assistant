@@ -24,6 +24,12 @@ button:hover {
   background: #9cc5db;
 }
 
+input {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 7px;
+}
 
 #general-box {
   background: rgba(255, 255, 255, 0.9);
@@ -44,9 +50,12 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 2px solid #edf4f7;
-  margin-bottom: 20px;
 }
 
 #logout {
+  display: none;
+}
+
+#level-search {
   display: none;
 }

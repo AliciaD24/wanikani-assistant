@@ -9,10 +9,19 @@
 <body>
   <div id="general-box">
     <h2>Welcome!</h2>
-    <input type="text" id="apiToken" placeholder="Enter API Token">
-    <button onclick="pullApi()">Search</button>
     
-    <div id="user-info"></div>
+    <div id="user-info">
+      <p>Enter your WaniKani API Token below to log in:</p>
+    </div>
+
+    <div id="login">
+    <input type="text" id="apiToken" placeholder="Enter API Token">
+    <button onclick="pullApi()">Login</button>
+    </div>
+    
+    <div id="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
     
   </div>
   <script src="./script.js"></script>
